@@ -1,0 +1,278 @@
+/* 	--------------- Load icon fonts---------------*/
+
+@font-face {
+  font-family: "CyclosMapFont-normal";
+  src: url("fonts/CyclosMapFont-normal.eot");
+  src: local("?"), url("fonts/CyclosMapFont-normal.ttf") format("truetype"),
+    url("fonts/CyclosMapFont-normal.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 	--------------- Customize icons---------------*/
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out,
+.easy-button-button,
+.leaflet-control-fullscreen-button,
+.leaflet-control .search-button {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: 30px !important;
+  max-height: 30px !important;
+  line-height: 30px;
+}
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out{
+  text-indent: 0px;
+}
+
+.leaflet-bar,
+.leaflet-control-search {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.homeButton:before {
+  font-family: "CyclosMapFont-normal", Sans-Serif;
+  content: "A";
+  font-size: 16px;
+  color: #006699;
+  margin-left: -5px;
+  text-shadow: none;
+  font-weight: initial !important;
+}
+
+.easy-button-button {
+  font-family:"CyclosMapFont-normal", Sans-Serif;
+  line-height: 18px !important;
+  padding: 7.2px 12px 9.6px 12px;
+  font-size: 12px;
+  border-radius: 2px !important;
+}
+
+.easy-button-button .button-state-unnamed-state{
+  margin-top: -2px
+}
+
+.leaflet-control-fullscreen a {
+  background: none;
+  background-color: white;
+  box-shadow: none !important;
+}
+
+a,
+a:hover {
+  box-shadow: none !important;
+}
+
+.leaflet-control-fullscreen a::before {
+  color: #006699;
+  content: "H";
+  font-family: "CyclosMapFont-normal", sans-serif;
+  font-size: 20px;
+  padding-left: 0.5px;
+  line-height: 31px;
+}
+
+.leaflet-fullscreen-on .leaflet-control-fullscreen a::before {
+  color: #006699;
+  content: "G";
+  font-family: "CyclosMapFont-normal", sans-serif;
+  font-size: 20px;
+  padding-left: 0.5px;
+  line-height: 31px;
+}
+
+.leaflet-control-search .search-button {
+  background: none;
+  background-color: #ffffff;
+  box-shadow: none !important;
+  border-radius: 2px;
+  line-height: 33.5px;
+}
+
+.search-exp .search-button {
+  margin-top: 1px;
+}
+
+.search-button:hover {
+  background: #f0f0f0 !important;
+}
+
+.leaflet-control-search .search-button::before {
+  color: #006699;
+  content: "F";
+  font-family: "CyclosMapFont-normal", sans-serif;
+  font-size: 14px;
+  padding-left: 8px;
+  text-shadow: 0px 0px 1px #006699;
+}
+
+/* 	--------------- Search menu ---------------*/
+
+.leaflet-control-container .search-exp {
+  background-color: #ffffff !important;
+}
+
+.leaflet-popup-tip {
+  background: white none repeat scroll 0 0;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+  color: #333;
+}
+
+.leaflet-popup-tip-container {
+  overflow: visible;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0px;
+  border: 1px solid #888;
+  margin: 0px 0px 0px 0px;
+}
+
+.leaflet-popup-content {
+  width: 350px;
+  margin: 0px 0px 0px 0px;
+}
+
+.leaflet-div-icon {
+  background: transparent;
+  border: 0px;
+}
+
+.leaflet-control-search.search-exp {
+  width: 250px;
+}
+
+.leaflet-control .search-cancel {
+  display: none !important;
+}
+
+.leaflet-control-search .search-button {
+  float: right;
+}
+
+.leaflet-control .search-tooltip {
+  background-color: #ffffff;
+  max-height: 200px;
+  margin: 0px 0px 0px;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.search-tooltip {
+  display: grid !important;
+  max-width: 245px !important;
+  overflow: auto !important;
+}
+
+.leaflet-control > .search-tooltip > .search-tip {
+  background: none;
+  color: #5f5f5f;
+  font-family: sans-serif;
+  font-size: 13px;
+  width: inherit;
+  margin: 0px;
+  padding: 5px 13px;
+  border-top: 1px solid #eeeeee !important;
+}
+
+.leaflet-control .search-tooltip .search-tip:hover {
+  background-color: #efefef;
+}
+
+.leaflet-control .search-input {
+  border: none;
+  margin: 5px 0px 5px 5px;
+  height: 22px;
+  color: #5f5f5f;
+  font-family: sans-serif;
+  font-size: 13px;
+  width: 210px !important;
+  padding: 0px, 0px, 0px, 2px;
+}
+
+/* 	--------------- Address card ---------------*/
+
+.cyclosMapTop,
+.cyclosMapBottom {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.cyclosMapMiddle {
+  background-color: #f2f2f2;
+  color: #444444;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.cyclosMapName,
+.cyclosMapAddress,
+.cyclosMapDescription,
+.cyclosMapMiddle,
+.cyclosMapPhone,
+.cyclosMapWebsite {
+  font-family: sans-serif;
+}
+
+.cyclosMapName {
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cyclosMapAddress {
+  font-size: 12px;
+  color: #666666;
+}
+
+.cyclosMapImage {
+  max-width: 100px;
+  max-height: 200px;
+  float: right;
+  margin: 5px 0px 5px 0px;
+}
+
+.cyclosMapPhone:before {
+  font-family: "CyclosMapFont-normal", Sans-Serif;
+  content: "B";
+  font-size: 13px;
+  line-height: 10px;
+  margin-right: 4px;
+  color: #888888;
+}
+
+.cyclosMapPhone {
+  display: inline-block;
+  color: #666666 !important;
+  padding-right: 2px;
+}
+
+.cyclosMapWebsite:before {
+  font-family: "CyclosMapFont-normal", Sans-Serif;
+  content: "A";
+  font-size: 13px;
+  line-height: 10px;
+  margin-right: 4px;
+  color: #888888;
+}
+
+.cyclosMapWebsite {
+  float: left;
+  margin-right: 15px;
+  color: #666666 !important;
+}
+
+.cyclosMapDescription {
+  white-space: pre-wrap;
+  font-size: 12px;
+  color: #666666;
+  padding-top: 5px;
+}
